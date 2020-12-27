@@ -34,7 +34,7 @@ public class JobScheduler {
 	@Value("${elastic.jsonpath.search.ids}")
 	private String jsonSearchIds;
 
-//	@Scheduled(cron = "${elastic.alert.cronjob.check}")
+	@Scheduled(cron = "${elastic.alert.cronjob.check}")
 	public Object jobRunner() {
 
 		String transactionId = UUIDUtil.getUUIDtoString();
