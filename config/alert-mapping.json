@@ -1,0 +1,13 @@
+{
+  "mappings": {
+    "properties": {
+      "index_name": {"type": "keyword"},
+      "use_query_string": {"type" : "boolean"},
+      "query_string": {"type" : "text"},
+      "query": { "type":  "keyword" },
+      "run_every": {"type": "text"},
+      "time_field": {"type": "date"},
+      "email": {"type": "text"}
+    }
+  }
+}
